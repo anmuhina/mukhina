@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="100%" height="100%">
+  <style>
+    .axis { stroke: #333; stroke-width: 1.5; }
+    .grid { stroke: #ddd; stroke-width: 1; }
+    .label { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .title { font-family: Arial, sans-serif; font-size: 16px; fill: #2a5d9f; font-weight: bold; }
+    .legend { font-family: Arial, sans-serif; font-size: 12px; fill: #333; }
+    .bar-google { fill: #4a90e2; }
+    .bar-yandex { fill: #f5a623; }
+    .bar-bing { fill: #7ed321; }
+    .value { font-family: Arial, sans-serif; font-size: 10px; fill: #333; text-anchor: middle; }
+    .value-up { font-family: Arial, sans-serif; font-size: 10px; fill: #d0021b; font-weight: bold; text-anchor: middle; }
+  </style>
+
+  <text x="450" y="30" text-anchor="middle" class="title">Изменение результатов поиска (русские запросы)</text>
+
+  <!-- Ось Y -->
+  <line x1="70" y1="60" x2="70" y2="380" class="axis" />
+  <!-- Ось X -->
+  <line x1="70" y1="380" x2="850" y2="380" class="axis" />
+
+  <!-- Сетка Y -->
+  <line x1="70" y1="60" x2="850" y2="60" class="grid" />
+  <text x="60" y="65" text-anchor="end" class="label">+100%</text>
+  <line x1="70" y1="140" x2="850" y2="140" class="grid" />
+  <text x="60" y="145" text-anchor="end" class="label">+50%</text>
+  <line x1="70" y1="220" x2="850" y2="220" class="grid" />
+  <text x="60" y="225" text-anchor="end" class="label">0%</text>
+  <line x1="70" y1="300" x2="850" y2="300" class="grid" />
+  <text x="60" y="305" text-anchor="end" class="label">-50%</text>
+  <line x1="70" y1="380" x2="850" y2="380" class="grid" />
+  <text x="60" y="385" text-anchor="end" class="label">-100%</text>
+
+  <!-- Запрос 1 (RU): 122.8, -93.3, -94.4 -->
+  <rect x="100" y="60" width="20" height="160" class="bar-google" />
+  <text x="110" y="55" class="value-up">122.8</text>
+  <rect x="125" y="220" width="20" height="149" class="bar-yandex" />
+  <text x="135" y="230" class="value">-93.3</text>
+  <rect x="150" y="220" width="20" height="151" class="bar-bing" />
+  <text x="160" y="230" class="value">-94.4</text>
+  <text x="135" y="400" text-anchor="middle" class="label">Запрос 1</text>
+
+  <!-- Запрос 2 (RU): 6.8, -51.6, 38.5 -->
+  <rect x="220" y="211" width="20" height="9" class="bar-google" />
+  <text x="230" y="205" class="value">6.8</text>
+  <rect x="245" y="220" width="20" height="82" class="bar-yandex" />
+  <text x="255" y="230" class="value">-51.6</text>
+  <rect x="270" y="158" width="20" height="62" class="bar-bing" />
+  <text x="280" y="150" class="value">38.5</text>
+  <text x="255" y="400" text-anchor="middle" class="label">Запрос 2</text>
+
+  <!-- Запрос 3 (RU): 16.3, -93.1, 13.8 -->
+  <rect x="340" y="194" width="20" height="26" class="bar-google" />
+  <text x="350" y="188" class="value">16.3</text>
+  <rect x="365" y="220" width="20" height="149" class="bar-yandex" />
+  <text x="375" y="230" class="value">-93.1</text>
+  <rect x="390" y="198" width="20" height="22" class="bar-bing" />
+  <text x="400" y="192" class="value">13.8</text>
+  <text x="375" y="400" text-anchor="middle" class="label">Запрос 3</text>
+
+  <!-- Запрос 4 (RU): 16.1, -93.9, 46.3 -->
+  <rect x="460" y="194" width="20" height="26" class="bar-google" />
+  <text x="470" y="188" class="value">16.1</text>
+  <rect x="485" y="220" width="20" height="150" class="bar-yandex" />
+  <text x="495" y="230" class="value">-93.9</text>
+  <rect x="510" y="146" width="20" height="74" class="bar-bing" />
+  <text x="520" y="140" class="value">46.3</text>
+  <text x="495" y="400" text-anchor="middle" class="label">Запрос 4</text>
+
+  <!-- Запрос 5 (RU): 8.2, -89.5, -5.6 -->
+  <rect x="580" y="207" width="20" height="13" class="bar-google" />
+  <text x="590" y="201" class="value">8.2</text>
+  <rect x="605" y="220" width="20" height="143" class="bar-yandex" />
+  <text x="615" y="230" class="value">-89.5</text>
+  <rect x="630" y="220" width="20" height="9" class="bar-bing" />
+  <text x="640" y="230" class="value">-5.6</text>
+  <text x="615" y="400" text-anchor="middle" class="label">Запрос 5</text>
+
+  <!-- Легенда -->
+  <rect x="700" y="60" width="12" height="12" class="bar-google" />
+  <text x="718" y="70" class="legend">Google</text>
+  <rect x="700" y="80" width="12" height="12" class="bar-yandex" />
+  <text x="718" y="90" class="legend">Яндекс</text>
+  <rect x="700" y="100" width="12" height="12" class="bar-bing" />
+  <text x="718" y="110" class="legend">Bing</text>
+
+  <text x="70" y="425" class="label" style="font-size: 11px; fill: #666;">* для наглядности шкала ограничена значениями от -100% до +100%. Значения выше +100% подписаны красным цветом.</text>
+</svg>
